@@ -1,5 +1,5 @@
 {
-    "name": "appkr/timemachine",
+    "name": "meshkorea/timemachine",
     "description": "Laravel/Lumen application-level time setter for testing",
     "type": "library",
     "license": "MIT",
