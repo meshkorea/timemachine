@@ -39,7 +39,7 @@ class UpdateCurrentTimeRequest extends FormRequest
             ],
             'ttl' => [
                 'integer',
-                'between:1,60',
+                'between:1,' . config('timemachine.maximum_ttl'),
             ],
         ];
     }
