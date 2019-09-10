@@ -57,11 +57,9 @@ class TimemachineServiceProvider extends ServiceProvider
 
     private function setCurrentTimeForTest()
     {
-        $isSafeToRun = $this->app->environment(
-            isset($this->app['config']['timemachine.allowed_env'])
-                ? $this->app['config']['timemachine.allowed_env']
-                : ['local']
-        );
+        $isSafeToRun = isset($this->app['config']['timemachine.enabled'])
+            ? $this->app['config']['timemachine.enabled']
+            : false;
 
         /** @var \Illuminate\Contracts\Cache\Repository $cacheRepository */
         $cacheRepository = $this->app['cache.store'];
