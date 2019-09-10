@@ -1,6 +1,6 @@
 <?php
 
-namespace Appkr\Timemachine;
+namespace Appkr\Timemachine\Laravel;
 
 use Closure;
 use Illuminate\Support\Facades\Request;

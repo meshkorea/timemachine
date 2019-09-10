@@ -1,6 +1,6 @@
 <?php
 
-use Appkr\Timemachine\CheckIfTimemachineEnabled;
+use Appkr\Timemachine\Laravel\CheckIfTimemachineEnabled;
 
 Route::group([
     'prefix' => 'timemachine',
